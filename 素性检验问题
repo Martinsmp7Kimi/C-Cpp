@@ -1,0 +1,15 @@
+#include<stdio.h>
+int n;
+int m;
+int main()
+{
+	scanf("%d", &n);
+	for (m = 2; m < n; m++)
+		if(n % m == 0) {
+			printf("Nope..\n");
+			break;
+		}
+	if (m == n)
+		printf("Yes!!\n");
+	return 0;
+}
